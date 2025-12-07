@@ -6,7 +6,7 @@ type UserCard = {
   avatar?: string;
 };
 
-export const UserCard = ({ id, name, age, email, avatar }: UserCard) => {
+export const UserCard = ({ name, age, email, avatar }: UserCard) => {
   const userAge = age < 18 ? `age: 🔞 ${age}` : age;
   const userAvatar = avatar ?? 'https://placehold.co/128?text=no+photo';
   return (

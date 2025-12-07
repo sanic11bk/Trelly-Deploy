@@ -94,11 +94,11 @@ export const tasks = {
 };
 
 export const getTask = async (
-  taskBoardId: string,
-  taskId: string
+  // taskBoardId: string,
+  // taskId: string
 ): Promise<GetTaskOutput> =>  Promise.resolve(task);
 
 export const getTasks = async (
-  controller: AbortController
+  // controller: AbortController
 ): Promise<GlobalTaskListResponse> => Promise.resolve(tasks);
 
