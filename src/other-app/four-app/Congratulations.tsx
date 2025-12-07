@@ -1,0 +1,18 @@
+type CongratulationsProps = {
+  reset: () => void;
+}
+
+export const Congratulations = ({reset}: CongratulationsProps) => {
+  return (
+    <>
+      <h1 style={{textAlign: 'center'}}>
+        🎉 Поздравляю! Твой слон наелся здоровой пищи и с улыбкой побежал играть
+        с другими слонами🎉
+      </h1>
+      <button type="button" onClick={reset}>
+        Давай сыграем еще раз и покормим другого слона
+      </button>
+      <div style={{ fontSize: "200px" }}>😊</div>
+    </>
+  );
+};
